@@ -1,0 +1,6 @@
+console.log("Certificate issued successfully.");
+await tx.wait(); // Wait for the transaction to be mined
+const tx = await contract.issueCertificate("abc123", "John Doe");
+const contract = await ethers.getContractAt("DocumentVerification", "0x60485A3c29F3C1f20215886AdF412b81a6cb3efc");
+.help
+npx hardhat console --network amoy
